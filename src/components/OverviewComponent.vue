@@ -65,6 +65,6 @@ export default {
 #wrapper{
     width: 70%;
     margin: 0 auto;
-    background-color: aliceblue;
+    padding: 30px 0;
 }
 </style>
