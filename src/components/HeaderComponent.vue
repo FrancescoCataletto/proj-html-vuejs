@@ -1,23 +1,25 @@
 <template>
-  <header class="d-flex justify-content-between align-items-center">
-      <div id="left-header">
-          <img src="" alt="MaxCoach Logo">
+  <header class="d-flex align-items-center">
+      <div id="left-header" class="d-flex justify-content-center">
+          <a href="#"><img src="../assets/img/dark-logo.png" alt="MaxCoach Logo"></a>
       </div>
       <nav>
           <ul>
-              <li>Home</li>
-              <li>Pages</li>
-              <li>Courses</li>
-              <li>Features</li>
-              <li>Blog</li>
-              <li>Shop</li>
+              <li>Home<i class="fa-solid fa-chevron-down"></i></li>
+              <li>Pages<i class="fa-solid fa-chevron-down"></i></li>
+              <li>Courses<i class="fa-solid fa-chevron-down"></i></li>
+              <li>Features<i class="fa-solid fa-chevron-down"></i></li>
+              <li>Blog<i class="fa-solid fa-chevron-down"></i></li>
+              <li>Shop<i class="fa-solid fa-chevron-down"></i></li>
           </ul>
       </nav>
       <div id="right-header" class="d-flex">
-          <div>
+          <div class="d-flex">
               <img src="../assets/img/en.png" alt="UK flag">
+              <p>ENGLISH<i class="fa-solid fa-chevron-down"></i></p>
+              <i class="fa-solid fa-circle-user"></i>
           </div>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
       </div>
   </header>
 </template>
@@ -32,20 +34,82 @@ export default {
 @import "../assets/img/global.scss";
 
 header{
-    height: 80px;
-    background-color: bisque;
-    width: 100vw;
+    height: 70px;
+    width: 100%;
+}
+
+#left-header{
+    width: 25%;
+    float: left;
+    img{
+        height: 25px;
+    }
 }
 
 nav{
-    width: 40%;
+    float: left;
+    width: 50%;
     ul{
         display: flex;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         justify-content: space-around;
         li{
             list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            i{
+                font-size: 8px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
         }
     }
+}
+
+#right-header{
+    float: right;
+    width: 25%;
+    position: relative;
+    div{
+        height: 70px;
+        width: 100%;
+        justify-content: space-around;
+        p{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            font-weight: bold;
+            i{
+                margin-left: 5px;
+                font-size: 8px;
+                cursor: pointer;
+            }
+        }
+        img{
+            margin: auto 0;
+            height: 25px;
+            cursor: pointer;
+        }
+        .fa-circle-user{
+            line-height: 70px;
+            cursor: pointer;
+        }
+
+    }
+    input{
+        height: 70px;
+        border: none;
+        border-radius: 0;
+        border-left: 1px solid lightgrey;
+    }
+}
+
+.fa-magnifying-glass{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 30px;
 }
 </style>

@@ -34,6 +34,7 @@ export default {
   width: 50%;
   height: 100%;
   float: left;
+  text-align: center;
 }
 
 #right-jumbo{
