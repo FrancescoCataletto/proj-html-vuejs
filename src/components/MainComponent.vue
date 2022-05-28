@@ -5,6 +5,7 @@
       <PlanCostComponent />
       <YouTubeComponent />
       <UpcomingEventsComponent />
+      <FeedbacksComponent />
   </main>
 </template>
 
@@ -14,9 +15,10 @@ import DiscoverNowComponent from './DiscoverNowComponent.vue';
 import PlanCostComponent from './PlanCostComponent.vue';
 import YouTubeComponent from './YouTubeComponent.vue';
 import UpcomingEventsComponent from './UpcomingEventsComponent.vue';
+import FeedbacksComponent from './FeedbacksComponent.vue';
 export default {
     name: "MainComponent",
-    components: { OverviewComponent, DiscoverNowComponent, PlanCostComponent, YouTubeComponent, UpcomingEventsComponent }
+    components: { OverviewComponent, DiscoverNowComponent, PlanCostComponent, YouTubeComponent, UpcomingEventsComponent, FeedbacksComponent }
 }
 </script>
 
