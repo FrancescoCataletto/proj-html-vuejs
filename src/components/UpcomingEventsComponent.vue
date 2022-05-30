@@ -123,6 +123,7 @@ export default {
     }
     .location{
         font-size: 12px;
+        color: grey;
     }
     p:nth-child(2){
         font-weight: bold;
@@ -137,8 +138,10 @@ export default {
         margin-bottom: 0.5rem;
     }
     button{
-        padding: 10px 20px;
+        padding: 10px 30px;
         color: white;
+        font-weight: bold;
+        font-size: 12px;
         background-color: $brand-color;
         border: none;
         border-radius: 5px;
