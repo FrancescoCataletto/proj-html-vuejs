@@ -19,6 +19,13 @@
             <img src="../assets/img/home-business-hero-avatar.png" alt="">
           </div>
         </div>
+        <div id="jumbo-absolute" class="d-flex flex-column">
+          <!-- light fontawesome are pro -->
+          <i class="fa-light fa-ruler"></i>
+          <i class="fa-light fa-life-ring"></i>
+          <i class="fa-light fa-book"></i>
+          <i class="fa-light fa-cart-shopping"></i>
+        </div>
   </div>
 </template>
 
@@ -34,6 +41,7 @@ export default {
 #jumbotron{
     height: 650px;
     background-color: rgb(239, 242, 246);
+    position: relative;
 }
 
 #left-jumbo{
@@ -81,6 +89,20 @@ export default {
       height: 100%;
       margin-top: 50px;
     }
+  }
+}
+
+#jumbo-absolute{
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background-color: white;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0px 0px 5px 1px;
+  i{
+    padding: 10px;
+    cursor: pointer;
   }
 }
 </style>
