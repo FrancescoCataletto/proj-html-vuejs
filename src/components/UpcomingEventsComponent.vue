@@ -4,76 +4,76 @@
           <h3>Wanna transform your life?</h3>
           <h2>Upcoming Events</h2>
       </div>
-      <div id="upcoming-middle">
+      <div id="upcoming-middle" class="clearfix">
           <div class="upcoming-card">
               <div>
-                  <p>Texas, US</p>
+                  <p class="location"><i class="fa-solid fa-location-dot"></i>Texas, US</p>
                   <p>Storytelling Workshop</p>
               </div>
-              <div>
-                  <p>22</p>
-                  <p>NOV</p>
+              <div class="d-flex flex-column align-items-center">
+                  <p class="number">22</p>
+                  <p class="month">NOV</p>
                   <button>Get ticket</button>
               </div>
           </div>
           <div class="upcoming-card">
               <div>
-                  <p>Texas, US</p>
+                  <p class="location"><i class="fa-solid fa-location-dot"></i>Texas, US</p>
                   <p>Storytelling Workshop</p>
               </div>
-              <div>
-                  <p>22</p>
-                  <p>NOV</p>
+              <div class="d-flex flex-column align-items-center">
+                  <p class="number">22</p>
+                  <p class="month">NOV</p>
                   <button>Get ticket</button>
               </div>
           </div>
           <div class="upcoming-card">
               <div>
-                  <p>Texas, US</p>
+                  <p class="location"><i class="fa-solid fa-location-dot"></i>Texas, US</p>
                   <p>Storytelling Workshop</p>
               </div>
-              <div>
-                  <p>22</p>
-                  <p>NOV</p>
+              <div class="d-flex flex-column align-items-center">
+                  <p class="number">22</p>
+                  <p class="month">NOV</p>
                   <button>Get ticket</button>
               </div>
           </div>
           <div class="upcoming-card">
               <div>
-                  <p>Texas, US</p>
+                  <p class="location"><i class="fa-solid fa-location-dot"></i>Texas, US</p>
                   <p>Storytelling Workshop</p>
               </div>
-              <div>
-                  <p>22</p>
-                  <p>NOV</p>
+              <div class="d-flex flex-column align-items-center">
+                  <p class="number">22</p>
+                  <p class="month">NOV</p>
                   <button>Get ticket</button>
               </div>
           </div>
           <div class="upcoming-card">
               <div>
-                  <p>Texas, US</p>
+                  <p class="location"><i class="fa-solid fa-location-dot"></i>Texas, US</p>
                   <p>Storytelling Workshop</p>
               </div>
-              <div>
-                  <p>22</p>
-                  <p>NOV</p>
+              <div class="d-flex flex-column align-items-center">
+                  <p class="number">22</p>
+                  <p class="month">NOV</p>
                   <button>Get ticket</button>
               </div>
           </div>
           <div class="upcoming-card">
               <div>
-                  <p>Texas, US</p>
+                  <p class="location"><i class="fa-solid fa-location-dot"></i>Texas, US</p>
                   <p>Storytelling Workshop</p>
               </div>
-              <div>
-                  <p>22</p>
-                  <p>NOV</p>
+              <div class="d-flex flex-column align-items-center">
+                  <p class="number">22</p>
+                  <p class="month">NOV</p>
                   <button>Get ticket</button>
               </div>
           </div>
       </div>
       <div id="upcoming-bottom">
-          <p>Excited about our event?<a href="#">View all evens</a></p>
+          <p>Excited about our event?<a href="#">View all events<i class="fa-solid fa-arrow-right"></i></a></p>
       </div>
   </div>
 </template>
@@ -94,20 +94,62 @@ export default {
 
 #upcoming-top{
     text-align: center;
+    margin: 40px 0;
+    h3{
+        color: $brand-color;
+        font-size: 18px;
+    }
+    h2{
+        font-weight: bold;
+    }
+}
+.clearfix{
+    display: table;
+    clear: both;
+    content: "";
 }
 
 .upcoming-card{
-    width: calc(50% - 40px);
+    width: calc(50% - 30px);
     float: left;
     background-color: rgb(248, 248, 248);
-    margin: 20px;
+    margin: 15px ;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-
+    i{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .location{
+        font-size: 12px;
+    }
+    p:nth-child(2){
+        font-weight: bold;
+    }
+    .number{
+        color: $brand-color;
+        font-size: 40px;
+        margin-bottom: 0.1rem;
+    }
+    .month{
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+    button{
+        padding: 10px 20px;
+        color: white;
+        background-color: $brand-color;
+        border: none;
+        border-radius: 5px;
+    }
 }
 
 #upcoming-bottom{
     text-align: center;
+    margin: 40px 0;
+    a{
+        color: $brand-color;
+    }
 }
 </style>
