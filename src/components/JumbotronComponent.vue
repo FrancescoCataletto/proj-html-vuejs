@@ -1,19 +1,23 @@
 <template>
   <div id="jumbotron">
         <div id="left-jumbo">
-          <h3>
+          <div>
+            <h3>
             New Challenges, New Skills
-          </h3>
-          <h1>
+            </h3>
+            <h1>
             BUILD YOUR OWN LIFE COACHING BUSINESS
-          </h1>
-          <h5>
+            </h1>
+            <h5>
             Whole-life Business Coaching for committed entrepreneurs
-          </h5>
-          <button>Get started today</button>
+            </h5>
+            <button>Get started today</button>
+          </div>
         </div>
         <div id="right-jumbo">
-          <img src="../assets/img/home-business-hero-avatar.png" alt="">
+          <div>
+            <img src="../assets/img/home-business-hero-avatar.png" alt="">
+          </div>
         </div>
   </div>
 </template>
@@ -25,8 +29,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import"../assets/img/global.scss";
+
 #jumbotron{
-    height: 724px;
+    height: 650px;
     background-color: rgb(239, 242, 246);
 }
 
@@ -34,7 +40,33 @@ export default {
   width: 50%;
   height: 100%;
   float: left;
-  text-align: center;
+  div{
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 20%;
+    h1, h3, h5{
+      margin: 20px 0;
+    }
+    h1{
+      font-size: 40px;
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+    }
+    h3{
+      color: $brand-color;
+    }
+    h5{
+      color: rgb(105, 105, 105);
+      font-size: 18px;
+    }
+    button{
+      color: white;
+      background-color: $brand-color;
+      border-radius: 5px;
+      border: none;
+      padding: 15px 30px;
+    }
+  }
 }
 
 #right-jumbo{
@@ -43,5 +75,12 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   float: right;
+  div:first-child{
+    height: 600px;
+    img{
+      height: 100%;
+      margin-top: 50px;
+    }
+  }
 }
 </style>
