@@ -20,14 +20,14 @@
                     </div>
                   </li>
                   <li>
-                    <h3><i class="fa-solid fa-circle-chevron-down"></i><i class="fa-solid fa-circle-chevron-up"></i>How can we help?</h3>
+                    <h3><i class="fa-solid fa-circle-chevron-down"></i><i class="fa-solid fa-circle-chevron-up"></i>Why would I need a business COACH?</h3>
                     <div class="pop-up">
                         <p>How many courses you've been on, using however many techniques and methods. Unless you've come to realize the value of mindset, then you've yet to understand how success comes.</p>
                         <p>With everyone else's mindset involved impacting too. Hence why business coaching is so crucial for success.</p> 
                     </div>
                   </li>
                   <li>
-                    <h3><i class="fa-solid fa-circle-chevron-down"></i><i class="fa-solid fa-circle-chevron-up"></i>How can we help?</h3>
+                    <h3><i class="fa-solid fa-circle-chevron-down"></i><i class="fa-solid fa-circle-chevron-up"></i>What is one-on-one coaching?</h3>
                     <div class="pop-up">
                         <p>How many courses you've been on, using however many techniques and methods. Unless you've come to realize the value of mindset, then you've yet to understand how success comes.</p>
                         <p>With everyone else's mindset involved impacting too. Hence why business coaching is so crucial for success.</p> 
@@ -85,14 +85,18 @@ export default {
         font-weight: bold;
         margin-bottom: 30px;
     }
+    h3{
+        font-size: 18px;
+    }
     li{
         cursor: pointer;
         list-style: none;
         border-bottom: 1px solid grey;
+        padding: 10px 0;
     }
     i{
         font-size: 20px;
-        margin-right: 3px;
+        margin-right: 10px;
     }
     .fa-circle-chevron-up{
             display: none;
