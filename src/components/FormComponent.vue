@@ -85,5 +85,9 @@ export default {
     padding: 0 25px;
     font-size: 14px;
   }
+  button:hover{
+      background-color: rgb(63, 58, 100);
+      color: white;
+    }
 }
 </style>

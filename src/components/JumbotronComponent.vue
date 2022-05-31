@@ -74,6 +74,10 @@ export default {
       border: none;
       padding: 15px 30px;
     }
+    button:hover{
+      background-color: rgb(63, 58, 100);
+      color: white;
+    }
   }
 }
 

@@ -146,6 +146,10 @@ export default {
         border: none;
         border-radius: 5px;
     }
+    button:hover{
+      background-color: rgb(63, 58, 100);
+      color: white;
+    }
 }
 
 #upcoming-bottom{

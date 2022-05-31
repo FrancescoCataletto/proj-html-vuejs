@@ -106,6 +106,10 @@ export default {
 #bottom-wrapper{
     text-align: center;
     margin-bottom: 40px;
+    button:hover{
+      background-color: rgb(63, 58, 100);
+      color: white;
+    }
 }
 
 #learn{
@@ -116,12 +120,18 @@ export default {
     margin-right: 20px;
     border: 2px solid rgb(238, 238, 238);
 }
+#learn:hover{
+    border: 2px solid rgb(63, 58, 100)
+}
 
 #start{
     color: white;
     background-color: $brand-color;
     border-radius: 5px;
     padding: 15px 30px;
-    border: 2px solid $brand-color;
+    border: 2px solid rgb(32, 173, 150);
+}
+#start:hover{
+    border: 2px solid rgb(63, 58, 100);
 }
 </style>
