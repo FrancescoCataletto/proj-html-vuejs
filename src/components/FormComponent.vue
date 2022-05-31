@@ -3,11 +3,13 @@
       <div id="circle"></div>
       <div id="wrapper">
         <div id="form-top">
-          <h2>Subscribe<span>Newsletters</span></h2>
-          <h3>Enter your email address to register to our newsletter subscription delivered on a regular basis!</h3>
+          <div class="d-flex">
+            <h2>Subscribe</h2><h2>Newsletters</h2>
+          </div>
+          <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
         </div>
         <div id="form-bottom" class="d-flex">
-          <input type="text" class="form-control">
+          <input type="email" class="form-control" placeholder="Enter your email">
           <button>Subscribe</button>
         </div>
       </div>
@@ -32,7 +34,7 @@ export default {
 #circle{
   position: absolute;
   padding: 20px;
-  border: 6px solid green;
+  border: 6px solid rgb(143, 214, 202);
   border-radius: 50%;
   top: 50%;
   left: 15%;
@@ -48,5 +50,40 @@ export default {
 #form-top{
   text-align: center;
   margin-bottom: 50px;
+  .d-flex{
+    justify-content: center;
+    h2:first-child{
+      font-weight: bold;
+      font-size: 40px;
+      margin-right: 10px;
+      color: rgb(51, 51, 51);
+    }
+    h2:nth-child(2){
+      font-size: 40px;
+      color: $brand-color;
+    }
+  }
+  p{
+    margin: 20px 0;
+  }
+}
+
+#form-bottom{
+  input{
+    background-color: rgb(245, 245, 245);
+    padding: 15px 20px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  button{
+    border: none;
+    color: white;
+    background-color: $brand-color;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 25px;
+    font-size: 14px;
+  }
 }
 </style>
