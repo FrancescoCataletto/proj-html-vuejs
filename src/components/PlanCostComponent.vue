@@ -102,6 +102,7 @@ export default {
     width: 25%;
     padding: 0 20px;
     position: relative;
+    cursor: pointer;
     img{
         width: 100%;
         border-radius: 5px;

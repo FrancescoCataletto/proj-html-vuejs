@@ -110,6 +110,7 @@ export default {
 }
 
 .upcoming-card{
+    border-left: 3px solid white;
     width: calc(50% - 30px);
     float: left;
     background-color: rgb(248, 248, 248);
@@ -152,11 +153,20 @@ export default {
     }
 }
 
+.upcoming-card:hover{
+    cursor: pointer;
+    background-color: white;
+    border-left: 3px solid $brand-color;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px;
+}
+
 #upcoming-bottom{
     text-align: center;
     margin: 40px 0;
     a{
         color: $brand-color;
+        margin-left: 10px;
     }
 }
 </style>
