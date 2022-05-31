@@ -5,21 +5,16 @@
       </div>
       <nav>
           <ul>
-              <li>Home<i class="fa-solid fa-chevron-down"></i></li>
-              <li>Pages<i class="fa-solid fa-chevron-down"></i></li>
-              <li>Courses<i class="fa-solid fa-chevron-down"></i></li>
-              <li>Features<i class="fa-solid fa-chevron-down"></i></li>
-              <li>Blog<i class="fa-solid fa-chevron-down"></i></li>
-              <li>Shop<i class="fa-solid fa-chevron-down"></i></li>
+              <li v-for="(link, index) in navArr" :key="`link${index}`">{{link.link}}<i class="fa-solid fa-chevron-down"></i></li>
           </ul>
       </nav>
       <div id="right-header" class="d-flex">
           <div class="d-flex">
-              <img v-if="value==='en'" src="../assets/img/en.png" alt="UK flag">
-              <img v-else src="../assets/img/de.png" alt="DE flag">
+              <img :src="this.lingua[0].flag" alt="UK flag">
               <select name="" id="" v-model="value">
-                  <option value="en" selected>ENGLISH</option>
-                  <option value="de">GERMAN</option>
+                  <option value="en" selected>{{this.lingua[0].language}}</option>
+                  <option value="en" selected>{{this.lingua[1].language}}</option>
+                  <option value="en" selected>{{this.lingua[2].language}}</option>
               </select>
               <i class="fa-solid fa-circle-user"></i>
           </div>
@@ -31,6 +26,12 @@
 <script>
 export default {
     name: "HeaderComponent",
+
+    props:{
+        lingua: Array,
+        navArr: Array
+    },
+
     data(){
         return{
             value: "en"

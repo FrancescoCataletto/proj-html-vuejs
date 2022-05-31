@@ -1,7 +1,8 @@
 <template>
   <div>
 
-    <HeaderComponent />
+    <HeaderComponent :lingua ="lingua"
+                     :navArr ="navArr"/>
     <JumbotronComponent />
     <MainComponent />
     <FormComponent />
@@ -17,9 +18,17 @@ import MainComponent from './components/MainComponent.vue';
 import FormComponent from './components/FormComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
+import {lingua} from "./assets/img/HeaderData";
+import { navArr } from './assets/img/HeaderData';
 export default {
     name: "App",
-    components: { HeaderComponent, JumbotronComponent, MainComponent, FormComponent, FooterComponent }
+    components: { HeaderComponent, JumbotronComponent, MainComponent, FormComponent, FooterComponent },
+    data(){
+      return{
+        lingua: lingua,
+        navArr: navArr
+      }
+    }
 }
 </script>
 
