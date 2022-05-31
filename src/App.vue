@@ -6,7 +6,9 @@
     <JumbotronComponent />
     <MainComponent />
     <FormComponent />
-    <FooterComponent />
+    <FooterComponent :rightExploreArr = "rightExploreArr"
+                     :leftExploreArr = "leftExploreArr"
+                     :informationArr = "informationArr"/>
 
   </div>
 </template>
@@ -20,13 +22,20 @@ import FooterComponent from './components/FooterComponent.vue';
 
 import {lingua} from "./assets/img/HeaderData";
 import { navArr } from './assets/img/HeaderData';
+
+import { rightExploreArr } from './assets/FooterData';
+import { leftExploreArr } from './assets/FooterData';
+import { informationArr } from './assets/FooterData';
 export default {
     name: "App",
     components: { HeaderComponent, JumbotronComponent, MainComponent, FormComponent, FooterComponent },
     data(){
       return{
         lingua: lingua,
-        navArr: navArr
+        navArr: navArr,
+        rightExploreArr: rightExploreArr,
+        leftExploreArr: leftExploreArr,
+        informationArr: informationArr
       }
     }
 }

@@ -17,26 +17,19 @@
             <h4>Explore</h4>
             <div id="left-explore">
               <ul>
-                <li>Start here</li>
-                <li>Blog</li>
-                <li>About us</li>
+                <li v-for="(rightLink, index) in rightExploreArr" :key="`rightLink${index}`">{{rightLink.link}}</li>
               </ul>
             </div>
             <div id="right-explore">
               <ul>
-                <li>Success story</li>
-                <li>Courses</li>
-                <li>Contact us</li>
+                <li v-for="(leftLink, index) in leftExploreArr" :key="`leftLink${index}`">{{leftLink.link}}</li>
               </ul>
             </div>
           </div>
           <div id="information">
             <h4>Information</h4>
             <ul>
-              <li>Membership</li>
-              <li>Purchase guide</li>
-              <li>Privacy policy</li>
-              <li>Terms of service</li>
+              <li v-for="(infoLink, index) in informationArr" :key="`infoLink${index}`">{{infoLink.link}}</li>
             </ul>
           </div>
         </div>
@@ -52,7 +45,13 @@
 
 <script>
 export default {
-    name: "FooterComponent"
+    name: "FooterComponent",
+
+    props:{
+      rightExploreArr: Array,
+      leftExploreArr: Array,
+      informationArr: Array
+    }
 }
 </script>
 
