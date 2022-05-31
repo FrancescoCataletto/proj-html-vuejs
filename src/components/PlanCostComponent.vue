@@ -7,30 +7,58 @@
       <div id="plan-cost-middle" class="d-flex">
           <div class="plan-card">
               <img src="../assets/img/course-02-443x600.jpg" alt="">
-              <div>
+              <div class="basic-info">
                   <p>$40.00</p>
                   <p>Learning to Write as  Professional Author</p>
               </div>
+              <div class="show-on-hover">
+                  <div class="d-flex">
+                      <p><i class="fa-solid fa-file-lines"></i>20 Lessons</p>
+                      <p><i class="fa-solid fa-user"></i>50 Students</p>
+                  </div>
+                  <p>The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and...</p>
+              </div>
           </div>
           <div class="plan-card">
               <img src="../assets/img/course-02-443x600.jpg" alt="">
-              <div>
+              <div class="basic-info">
                   <p>Free</p>
                   <p>Customer-centric Info-Tech Strategies</p>
               </div>
-          </div>
-          <div class="plan-card">
-              <img src="../assets/img/course-02-443x600.jpg" alt="">
-              <div>
-                  <p>$19.00</p>
-                  <p>Open Programming Courses for Everyone: Python</p>
+              <div class="show-on-hover">
+                  <div class="d-flex">
+                      <p><i class="fa-solid fa-file-lines"></i>20 Lessons</p>
+                      <p><i class="fa-solid fa-user"></i>50 Students</p>
+                  </div>
+                  <p>The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and...</p>
               </div>
           </div>
           <div class="plan-card">
               <img src="../assets/img/course-02-443x600.jpg" alt="">
-              <div>
+              <div class="basic-info">
+                  <p>$19.00</p>
+                  <p>Open Programming Courses for Everyone: Python</p>
+              </div>
+              <div class="show-on-hover">
+                  <div class="d-flex">
+                      <p><i class="fa-solid fa-file-lines"></i>20 Lessons</p>
+                      <p><i class="fa-solid fa-user"></i>50 Students</p>
+                  </div>
+                  <p>The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and...</p>
+              </div>
+          </div>
+          <div class="plan-card">
+              <img src="../assets/img/course-02-443x600.jpg" alt="">
+              <div class="basic-info">
                   <p>$26.00</p>
                   <p>Academic Listening and Note-taking</p>
+              </div>
+              <div class="show-on-hover">
+                  <div class="d-flex">
+                      <p><i class="fa-solid fa-file-lines"></i>20 Lessons</p>
+                      <p><i class="fa-solid fa-user"></i>50 Students</p>
+                  </div>
+                  <p>The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and...</p>
               </div>
           </div>
       </div>
@@ -78,7 +106,7 @@ export default {
         width: 100%;
         border-radius: 5px;
     }
-    div{
+    .basic-info{
         position: absolute;
         bottom: 0px;
         left: 50px;
@@ -91,6 +119,35 @@ export default {
             color: white;
             font-weight: bold;
         }
+    }
+    .show-on-hover{
+        display: none;
+    }
+}
+
+.plan-card:hover{
+    .show-on-hover{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 50px;
+        width: 70%;
+        p{
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        i{
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    }
+    .basic-info{
+        position: absolute;
+        bottom: 110px;
+        left: 50px;
+        width: 70%;
     }
 }
 
