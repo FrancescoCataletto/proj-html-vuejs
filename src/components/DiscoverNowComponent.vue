@@ -47,8 +47,10 @@
                   </div>
               </div>
           </div>
-          <div id="bottom-discover">
-              <i class="fa-solid fa-ellipsis"></i>
+          <div id="bottom-discover" class="d-flex justify-content-center">
+              <div id="selected"></div>
+              <div></div>
+              <div></div>
           </div>
       </div>
   </div>
@@ -107,7 +109,7 @@ export default {
 
 .card-link{
     background-color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     border-top: 1px solid rgb(247, 247, 247);
     a{
         text-decoration: none;
@@ -119,10 +121,29 @@ export default {
         margin-left: 3px;
     }
 }
+.card-link:hover, .card-link:hover a, .card-link:hover i{
+    cursor: pointer;
+    background-color: $brand-color;
+    color: white;
+}
 
 #bottom-discover{
     text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
+    padding: 40px 0;
+    div{
+        background-color: black;
+        opacity: 0.2;
+        padding: 5px;
+        border-radius: 50%;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    #selected{
+            background-color: black;
+            opacity: 1;
+            padding: 5px;
+            border-radius: 50%;
+            margin: 0 10px;
+    }
 }
 </style>
