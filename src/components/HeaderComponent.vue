@@ -15,8 +15,12 @@
       </nav>
       <div id="right-header" class="d-flex">
           <div class="d-flex">
-              <img src="../assets/img/en.png" alt="UK flag">
-              <p>ENGLISH<i class="fa-solid fa-chevron-down"></i></p>
+              <img v-if="value==='en'" src="../assets/img/en.png" alt="UK flag">
+              <img v-else src="../assets/img/de.png" alt="DE flag">
+              <select name="" id="" v-model="value">
+                  <option value="en" selected>ENGLISH</option>
+                  <option value="de">GERMAN</option>
+              </select>
               <i class="fa-solid fa-circle-user"></i>
           </div>
           <input type="text" class="form-control" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
@@ -26,7 +30,12 @@
 
 <script>
 export default {
-    name: "HeaderComponent"
+    name: "HeaderComponent",
+    data(){
+        return{
+            value: "en"
+        }
+    }
 }
 </script>
 
@@ -34,6 +43,7 @@ export default {
 @import "../assets/img/global.scss";
 
 header{
+    background-color: white;
     height: 70px;
     width: 100%;
 }
@@ -76,17 +86,6 @@ nav{
         height: 70px;
         width: 100%;
         justify-content: space-around;
-        p{
-            display: flex;
-            align-items: center;
-            margin-bottom: 0;
-            font-weight: bold;
-            i{
-                margin-left: 5px;
-                font-size: 8px;
-                cursor: pointer;
-            }
-        }
         img{
             margin: auto 0;
             height: 25px;
@@ -96,7 +95,9 @@ nav{
             line-height: 70px;
             cursor: pointer;
         }
-
+    }
+    select{
+        border: none;
     }
     input{
         height: 70px;
