@@ -21,10 +21,10 @@
         </div>
         <div id="jumbo-absolute" class="d-flex flex-column">
           <!-- light fontawesome are pro -->
-          <i class="fa-light fa-ruler"></i>
-          <i class="fa-light fa-life-ring"></i>
-          <i class="fa-light fa-book"></i>
-          <i class="fa-light fa-cart-shopping"></i>
+          <i class="fa-solid fa-cart-plus"></i>
+          <i class="fa-solid fa-cart-plus"></i>
+          <i class="fa-solid fa-cart-plus"></i>
+          <i class="fa-solid fa-cart-plus"></i>
         </div>
   </div>
 </template>
