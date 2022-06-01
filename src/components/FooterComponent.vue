@@ -37,7 +37,7 @@
           <p><i class="fa-solid fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</p>
         </div>
       </div>
-      <div id="scroll-to-top">
+      <div id="scroll-to-top" @click="scrollToTop">
         <i class="fa-solid fa-arrow-up"></i>
       </div>
   </footer>
@@ -51,7 +51,14 @@ export default {
       rightExploreArr: Array,
       leftExploreArr: Array,
       informationArr: Array
-    }}
+    },
+
+    methods:{
+      scrollToTop(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
