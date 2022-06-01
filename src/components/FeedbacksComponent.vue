@@ -1,5 +1,6 @@
 <template>
   <div id="feedbacks">
+      <div id="shadow"></div>
       <div id="top-feedbacks">
           <h3>People are praising Maxcoach</h3>
           <h2>What make they love us?</h2>
@@ -45,7 +46,7 @@
         <div></div>
         <div></div>
       </div>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -60,6 +61,29 @@ export default {
 #feedbacks{
     background-color: rgb(248, 248, 248);
     margin: 30px 0;
+    position: relative;
+}
+
+#feedbacks::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    top: -300px;
+    right: 0px;
+    height: 300px;
+    width: 700px;
+    border-bottom-right-radius: 100%;
+    z-index: 1;
+}
+
+#shadow{
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    background-color: rgb(248, 248, 248);
+    top: -300px;
+    right: 0px;
+    z-index: 0;
 }
 
 #top-feedbacks{

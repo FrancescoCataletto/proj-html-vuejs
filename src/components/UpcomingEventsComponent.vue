@@ -109,6 +109,11 @@ export default {
     content: "";
 }
 
+#upcoming-middle{
+    position: relative;
+    z-index: 999;
+}
+
 .upcoming-card{
     border-left: 3px solid white;
     width: calc(50% - 30px);
@@ -164,6 +169,8 @@ export default {
 #upcoming-bottom{
     text-align: center;
     margin: 40px 0;
+    position: relative;
+    z-index: 999;
     a{
         color: $brand-color;
         margin-left: 10px;
