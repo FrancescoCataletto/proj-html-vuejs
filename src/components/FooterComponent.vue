@@ -51,8 +51,7 @@ export default {
       rightExploreArr: Array,
       leftExploreArr: Array,
       informationArr: Array
-    }
-}
+    }}
 </script>
 
 <style lang="scss" scoped>

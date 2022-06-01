@@ -1,14 +1,14 @@
 const lingua = [
     {
-        flag: "../assets/img/en.png",
+        flag: require(`../img/en.png`),
         language: "ENGLISH"
     },
     {
-        flag: "../assets/img/de.png",
+        flag: require(`../img/de.png`),
         language: "GERMAN"
     },      
     {
-        flag: "../assets/img/fr.png",
+        flag: require(`../img/fr.png`),
         language: "FRENCH"
     }
 ]

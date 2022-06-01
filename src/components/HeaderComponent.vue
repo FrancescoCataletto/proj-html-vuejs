@@ -10,11 +10,11 @@
       </nav>
       <div id="right-header" class="d-flex">
           <div class="d-flex">
-              <img :src="this.lingua[0].flag" alt="UK flag">
-              <select name="" id="" v-model="value">
+              <img :src="this.lingua[this.index].flag" alt="UK flag">
+              <select name="" id="" v-model="value" @change="language">
                   <option value="en" selected>{{this.lingua[0].language}}</option>
-                  <option value="en" selected>{{this.lingua[1].language}}</option>
-                  <option value="en" selected>{{this.lingua[2].language}}</option>
+                  <option value="de">{{this.lingua[1].language}}</option>
+                  <option value="fr">{{this.lingua[2].language}}</option>
               </select>
               <i class="fa-solid fa-circle-user"></i>
           </div>
@@ -34,7 +34,20 @@ export default {
 
     data(){
         return{
-            value: "en"
+            value: "en",
+            index: 0
+        }
+    },
+
+    methods:{
+        language(){
+            if(this.value === "de"){
+               this.index = 1
+            }else if(this.value === "fr"){
+               this.index = 2
+            }else{
+                this.index = 0
+            }
         }
     }
 }
