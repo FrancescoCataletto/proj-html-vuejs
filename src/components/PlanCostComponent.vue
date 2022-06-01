@@ -6,6 +6,7 @@
       </div>
       <div id="plan-cost-middle" class="d-flex">
           <div class="plan-card">
+              <div id="shadow"></div>
               <img src="../assets/img/course-02-443x600.jpg" alt="">
               <div class="basic-info">
                   <p>$40.00</p>
@@ -20,6 +21,7 @@
               </div>
           </div>
           <div class="plan-card">
+              <div id="shadow"></div>
               <img src="../assets/img/course-02-443x600.jpg" alt="">
               <div class="basic-info">
                   <p>Free</p>
@@ -34,6 +36,7 @@
               </div>
           </div>
           <div class="plan-card">
+              <div id="shadow"></div>
               <img src="../assets/img/course-02-443x600.jpg" alt="">
               <div class="basic-info">
                   <p>$19.00</p>
@@ -48,6 +51,7 @@
               </div>
           </div>
           <div class="plan-card">
+              <div id="shadow"></div>
               <img src="../assets/img/course-02-443x600.jpg" alt="">
               <div class="basic-info">
                   <p>$26.00</p>
@@ -99,8 +103,8 @@ export default {
 }
 
 .plan-card{
-    width: 25%;
-    padding: 0 20px;
+    width: calc(25% - 40px);
+    margin: 0 20px;
     position: relative;
     cursor: pointer;
     img{
@@ -126,6 +130,15 @@ export default {
     }
 }
 
+#shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, transparent);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .plan-card:hover{
     .show-on-hover{
         display: block;
@@ -146,7 +159,7 @@ export default {
     }
     .basic-info{
         position: absolute;
-        bottom: 110px;
+        bottom: 180px;
         left: 50px;
         width: 70%;
     }

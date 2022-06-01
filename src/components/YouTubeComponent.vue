@@ -99,7 +99,7 @@ export default {
         margin-right: 10px;
     }
     .fa-circle-chevron-up{
-            display: none;
+        display: none;
     }
     li:hover .fa-circle-chevron-down{
         display: none;
